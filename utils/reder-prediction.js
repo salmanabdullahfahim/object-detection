@@ -36,3 +36,8 @@ export const renderPredictions = (predictions, ctx) => {
     }
   });
 };
+
+const playAudio = throttle(() => {
+  const audio = new Audio("/cyren.mp3");
+  audio.play();
+}, 2000);
